@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #Ex1.
 i = 1
 while i < 6:
@@ -26,33 +25,4 @@ while i < 6:
   print(i)
   i += 1
 else:
-=======
-#Ex1.
-i = 1
-while i < 6:
-     print(i)
-     i += 1
-
-#Ex2.
-i = 1
-while i < 6:
-  if i == 3:
-      break
-  i += 1
-  
-#Ex3.
-i = 0
-while i < 6:
-  i += 1
-  if i == 3:
-      continue
-  print(i)
-
-#Ex4.
-i = 1
-while i < 6:
-  print(i)
-  i += 1
-else:
->>>>>>> ba975ea842268b822100258c79bc1057464880a8
   print("i is no longer less than 6")

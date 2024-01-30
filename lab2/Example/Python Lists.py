@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 #List
 #Example 1.
 thislist = ["apple", "banana", "cherry"]
@@ -26,7 +26,7 @@ print(type(mylist))
 
 #Example 7.
 thislist = list(("apple", "banana", "cherry")) # note the double round-brackets
-=======
+
 #List
 #Example 1.
 thislist = ["apple", "banana", "cherry"]
@@ -53,6 +53,5 @@ mylist = ["apple", "banana", "cherry"]
 print(type(mylist))
 
 #Example 7.
-thislist = list(("apple", "banana", "cherry")) # note the double round-brackets
->>>>>>> ba975ea842268b822100258c79bc1057464880a8
-print(thislist)
+# thislist = list(("apple", "banana", "cherry")) # note the double round-brackets
+# print(thislist)

@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 #Ex1.
 car =	{
   "brand": "Ford",
@@ -36,7 +36,6 @@ car =	{
   "model": "Mustang",
   "year": 1964
 }
-=======
 #Ex1.
 car =	{
   "brand": "Ford",
@@ -74,5 +73,4 @@ car =	{
   "model": "Mustang",
   "year": 1964
 }
->>>>>>> ba975ea842268b822100258c79bc1057464880a8
 car.clear()
