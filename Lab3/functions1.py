@@ -1,4 +1,3 @@
-"""
 #Ex1.
 def ounces(k):
     print(k*28.3495231)
@@ -35,20 +34,7 @@ def prime():
                     k+=1
         list.append(lst[j])            
     print(list)
-print(prime())
-
-def print_permutations():
-    user_input = input("Введите строку: ")
-    
-    # Получаем все перестановки строки
-    all_permutations = permutations(user_input)
-    
-    # Выводим каждую перестановку
-    for perm in all_permutations:
-        print(''.join(perm))
-
-# Вызываем функцию
-print_permutations()
+prime()
 #Ex6.
 def reverse(x):
     words=x.split()
@@ -56,21 +42,3 @@ def reverse(x):
     return y
 n=reverse(input())
 print(n)
-"""
-#Ex4.
-def prime():
-    lst=[]
-    list=[]
-    x=int(input())
-    for i in range(x):
-        num=int(input())
-        lst.append(num)
-        k=2
-        for j in range(0, len(lst)):
-            while k<lst[j]:
-                if lst[j]%k!=0:
-                    k+=1
-        list.append(lst[j])            
-    print(list)
-prime()
-        
