@@ -21,7 +21,4 @@ def guess_the_number():
         else:
             print(f"Good job, {name}! You guessed my number in {guesses_taken} guesses!")
             break
-
-
-if __name__ == "__main__":
-    guess_the_number()
+guess_the_number()
