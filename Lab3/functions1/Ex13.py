@@ -1,9 +1,22 @@
-def is_palindrome(word):
-    word = word.replace(" ", "").lower()
-    if word == word[::-1]:
-        print("This is a palindrome.")
-    else:
-        print("This is not a palindrome.")
+import random
+
+def guess_the_number():
+    print("Hello! What is your name?")
+    name = input()
+    print(f"Well, {name}, I am thinking of a number between 1 and 20.")
+    secret_number = random.randint(1, 20)
+    guesses_taken = 0
+
+    while True:
+        print("Take a guess.")
+        guess = int(input())
+        guesses_taken += 1
         
-word = input("Enter a phrase: ")
-is_palindrome(word)
+        if guess < secret_number:
+            print("Your guess is too low.")
+        elif guess > secret_number:
+            print("Your guess is too high.")
+        else:
+            print(f"Good job, {name}! You guessed my number in {guesses_taken} guesses!")
+            break
+guess_the_number()
