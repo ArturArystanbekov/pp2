@@ -1,20 +1,15 @@
 class Shape:
-    def __init__(self):
+    def __init__(self, leng, wid):
         pass
-
     def area(self):
-        return 0
+        return self.leng * self.wid
+
 
 class Square(Shape):
-    def __init__(self, length):
-        super().__init__()
-        self.length = length
+    def __init__(self, leng=0):
+        self.leng = leng
+        self.wid = leng
 
-    def area(self):
-        return self.length * self.length
 
-shape = Shape()
-print(shape.area())
-
-square = Square(8)
-print(square.area())
+p1 = Square(int(input()))
+print(f"area of the square: {p1.area()}")

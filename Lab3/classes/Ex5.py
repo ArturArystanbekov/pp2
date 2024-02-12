@@ -1,26 +1,32 @@
-class jeke():
-    def __init__(self, owner):
+class bank_account:
+    def __init__(self, owner, balance):
         self.owner = owner
-        self.balance = 0
+        self.balance = balance
+        print(f'name: {self.owner} \nbalance: {self.balance}')
+        pass
     
-    def teks(self):
-        print(f"Balance is {self.balance}")
-
-    def deposit(self, ai):
-        self.balance += ai
-        print(f"{ai} has been deposited")
-
-    def withdraw(self, ai):
-        if ai > self.balance:
-            print("Not enough cash on balance")
+    def deposit(self, money):
+        self.balance += money
+        print(f"deposit: {self.balance}")
+    
+    def withdraw(self, money):
+        if self.balance - money >= 0:
+            self.balance -= money
+            print(f"Your balance: {self.balance}")
+            return
         else:
-            self.balance -= ai
-            print(f"{ai} has been withdrawn from deposit")
+            print(f'doesn\'t enough, you have only - {self.balance}tg')
+            return
 
-own1 = jeke("Birzhan")
 
-own1.teks()
-own1.deposit(5000)
-own1.teks()
-own1.withdraw(2000)
-own1.teks()
+client = bank_account(input(), int(input()))
+client.__init__
+
+client.deposit(int(input()))
+client.deposit
+
+client.withdraw(int(input()))
+client.withdraw
+
+client.withdraw(int(input()))
+client.withdraw

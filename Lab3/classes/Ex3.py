@@ -1,15 +1,16 @@
 class Shape:
-    def __init__(self):
+    def __init__(self, leng, wid):
         pass
 
-class Rectangle(Shape):
-    def __init__(self, length, width):
-        super().__init__()
-        self.length = length
-        self.width = width
-
     def area(self):
-        return self.length * self.width
+        return self.leng * self.wid
 
-rectangle = Rectangle(10, 2)
-print(rectangle.area()) 
+
+class Rectangle(Shape):
+    def __init__(self, leng=0, wid=0):
+        self.leng = leng
+        self.wid = wid
+
+
+p1 = Rectangle(int(input()), int(input()))
+print(f"area of the Rectangle: {p1.area()}")
