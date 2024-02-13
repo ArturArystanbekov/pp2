@@ -1,11 +1,10 @@
-#Ex5.
 from itertools import permutations
 
-def print_permutations(input_string):
-    permuted_strings = permutations(input_string)
-    for permuted_string in permuted_strings:
-        print(''.join(permuted_string))
+def permutation(input_string):
+    strings = permutations(input_string)
+    for i in strings:
+        print(''.join(i))
 
 
 input_string = input("Enter the string: ")
-print_permutations(input_string)
+permutation(input_string)
