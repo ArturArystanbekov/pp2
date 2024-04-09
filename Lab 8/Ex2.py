@@ -4,8 +4,9 @@ from random import randrange
 
 Res=600
 size=25
+sizea=15
 score=0
-speed=5
+speed=3
 
 x,y=randrange(0, Res, size),randrange(0, Res, size)
 apple=randrange(0, Res, size),randrange(0, Res, size)
@@ -39,7 +40,7 @@ while True:
     if snake[-1]==apple:
         apple=randrange(0, Res, size),randrange(0, Res, size)
         length+=1
-        FPS+=1
+        FPS+=0.5
         score+=1
         
     if x<0 or x> Res-size or y<0 or y> Res-size or len(snake) != len(set(snake)):
